@@ -1,106 +1,242 @@
-<!DOCTYPE html>
-<html lang="zxx">
- <head>
-  <meta charset="UTF-8">
-  <title>homework-04</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
- <body>
-   <header class="head_menu">
-     <div class="container">
-     <nav class="menu_nav clearfix">
-      <a href="" class="logotype">Mart</a>
-      <ul class="menu_nav_list clearfix"> 
-        <li class="menu_nav_list_item">
-          <a href="#" class="link_nav_list_item">home</a>
-        </li> 
-        <li class="menu_nav_list_item">
-          <a href="#" class="link_nav_list_item">about us</a>
-        </li> 
-        <li class="menu_nav_list_item">
-          <a href="#" class="link_nav_list_item">page</a>
-        </li> 
-        <li class="menu_nav_list_item">
-          <a href="#" class="link_nav_list_item">shop</a>
-        </li> 
-        <li class="menu_nav_list_item">
-          <a href="#" class="link_nav_list_item">blog</a>
-        </li> 
-        <li class="menu_nav_list_item">
-          <a href="#" class="link_nav_list_item">contact us</a>
-        </li>
-      </ul>
-     </nav>
-    </div> 
-   </header>
-   <main>
-    <section class="featured_products container">
-     <h2 class="featured_products_name">featured products</h2>
-    <div class="featured_products_list container clearfix">
-     <ul class="products_list clearfix">
-      <li class="products_list_item clearfix">
-        <img src="./img/products/product1.png" alt="blue shoes" width="254" height="282">
-        <a href="#" class="product_link"><h3 class="products">blue tshirt</h3><p class="price">$26</p></a>
-      </li> 
-      <li class="products_list_item clearfix">
-        <img src="./img/products/product2.png" alt="golden belt" width="254" height="282">
-        <a href="#" class="product_link"><h3 class="products">woman shirt</h3><p class="price">$31</p></a>
-      </li> 
-      <li class="products_list_item clearfix">
-        <img src="./img/products/product3.png" alt="grey hat" width="254" height="282">
-        <a href="#" class="product_link"><h3 class="products">yellow shirt</h3><p class="price">$21</p></a>
-      </li> 
-      <li class="products_list_item clearfix">
-        <img src="./img/products/product4.png" alt="blue bag" width="254" height="282">
-        <a href="#" class="product_link"><h3 class="products">cool lingerie</h3><p class="price">$56</p></a>
-      </li> 
-      <li class="products_list_item clearfix">
-        <img src="./img/products/product5.png" alt="black bag" width="255" height="282">
-        <a href="#" class="product_link"><h3 class="products">blue tshirt</h3><p class="price">$26</p></a>
-      </li> 
-      <li class="products_list_item clearfix">
-        <img src="./img/products/product6.png" alt="black belt" width="255" height="282">
-        <a href="#" class="product_link"><h3 class="products">woman shirt</h3><p class="price">$31</p></a>
-      </li>
-      <li class="products_list_item clearfix">
-        <img src="./img/products/product7.png" alt="yellow shoes" width="255" height="282">
-        <a href="#" class="product_link"><h3 class="products">yellow shirt</h3><p class="price">$21</p></a>
-      </li>
-      <li class="products_list_item clearfix">
-        <img src="./img/products/product8.png" alt="glasses" width="255" height="282">
-        <a href="#" class="product_link"><h3 class="products">cool lingerie</h3><p class="price">$56</p></a>
-      </li>
-     </ul>
-   </div>
-    </section>
-    <section class="latest_news_menu">
-      <div class="container">
-      <h2 class="latest_news_title">latest news</h2>
-      <ul class="latest_news_list clearfix">
-        <li class="latest_news_items clearfix">
-          <img src="./img/news/ipad.jpg" alt="ipad" width="348" height="262">
-          <h3 class="news_title">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenea</h3>
-          <p class="info_news">Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nib</p>
-          <a href ="#" class="btn_read_more">Read More</a>
-        </li>
-        <li class="latest_news_items">
-          <img src="./img/news/women.jpg" alt="women" width="348" height="262">
-          <h3 class="news_title">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenea</h3>
-          <p class="info_news">Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nib</p>
-          <a href ="#" class="btn_read_more">Read More</a>
-        </li>
-        <li class="latest_news_items">
-          <img src="./img/news/bus.jpg" alt="bus" width="348" height="262">
-          <h3 class="news_title">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenea</h3>
-          <p class="info_news">Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nib</p>
-          <a href ="#" class="btn_read_more">Read More</a>
-        </li>
-      </ul>
-     </div>
-    </section>
-   </main>
- </body>
-</html>                 
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+a {
+   text-decoration: none;
+}
+
+.link {
+   color: #0f0101;
+}
+
+.product_link {
+   color: #ffffff;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.head_menu {
+    padding-top: 38px;
+    padding-bottom: 98px;
+}
+
+.menu_nav{
+    font-size: 0;
+}
+
+.logotype{
+    font-size: 30px;
+    text-transform: uppercase;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 400;
+    color: rgb(85, 82, 82);
+}
+
+.logotype::first-letter {
+    color: rgb(26, 188, 156);
+    font-weight: 900;
+}
+
+.menu_nav_list{
+    float: right; 
+    color: #0f0101;
+}
+
+.menu_nav_list_item{
+    text-transform: uppercase;
+    float: left; 
+}
+
+.link_nav_list_item{
+    display: block;
+    padding-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    list-style: none;
+    font-size: 14px;
+    line-height: 11px;
+    font-weight: 700;
+}
+
+.featured_products_name {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    margin-bottom: 90px;
+    line-height: 32px;
+}
+
+.featured_products{
+    padding-bottom: 96px;
+}
+
+.products_list{
+    list-style: none;
+    margin: 0 auto;
+    font-size: 0;
+    padding-inline-start: 0;
+}
+
+.products_list_item{
+  float: left;
+  width: 254px;
+  margin-left: 0;
+  margin-right: 31px;
+  margin-bottom: 30px;
+  background-color: #e9f0fd;
+}
+
+.products{
+    display: inline-block;
+    float: left;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase; 
+    font-size: 18px; 
+    line-height: 32px;
+    background-color: rgb(50, 50, 50);
+    width: 80%;
+}
+
+.products_list_item:nth-child(4n+4){
+    margin-right: 0;
+}
+
+.products_list_item:nth-last-child(-n+4){
+    margin-bottom: 0;
+}
+
+.latest_news_title{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    padding-bottom: 80px;
+}
+
+.latest_news_list{
+    padding-bottom: 46px;
+}
+
+.latest_news_items{
+  list-style: none;
+  float: left;
+  width: 350px;
+  margin-right: 30px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.latest_news_items:last-child {
+    margin-right: 0;
+}
+
+.latest_news_list {
+    padding-inline-start: 0;
+}
+
+.news_title::after {
+    content: "";
+    width: 136px;
+    height: 4px;
+    background-color: #1abc9c;
+    display: block;
+    margin: 0;
+    margin-top: 14px ;
+}
+
+h2::after{
+    content: "";
+    width: 164px;
+    height: 8px;
+    background-color: #1abc9c;
+    display: block;
+    margin: 0 auto;
+    margin-top: 32px ;
+}
+
+.link_nav_list_item:hover{
+    color: #39c5a9;
+}
+
+.link_nav_list_item:focus {
+    color: #39c5a9;
+    opacity: 50%;
+}
+
+.price{
+    color: #ffffff;
+    display: inline-block;
+    float: right;
+    background-color: rgba(50, 50, 50, 0.44);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase; 
+    font-size: 18px; 
+    line-height: 32px;
+    font-weight: 700;
+    width: 20%;
+    text-align: center;
+}
+
+.btn_read_more{
+    display: block;
+    width: 160px;
+    height: 51px;
+    background-color: #4ec6ab;
+    border: 0;
+    border-radius: 3px; 
+    color: #ffffff;
+    text-align: center;
+    padding-top: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.btn_read_more:hover{
+    opacity: 50%;
+}
+
+.btn_read_more:focus{
+   background-color: #ffffff;
+   color: #000000;
+   border: 2px solid #000000;
+}
+
+.product_link:hover .products {
+    background-color: #1abc9c;
+    font-weight: 300;
+}
+
+.product_link:hover .price {
+    background-color: rgba(28, 186, 156, 0.44);
+}
+
+.news_title{
+    margin-bottom: 26px;
+    font-weight: 600;
+}
+
+.info_news{
+    margin-bottom: 24px;
+}
